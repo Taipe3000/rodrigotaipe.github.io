@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Indice de Masa Corporal</title>
+</head>
+<body>
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+    }
+
+    var miEdad = 16;
+    var edadHermano = 24;
+
+    imprimir("Nuestra diferencia de edad es " + (edadHermano - miEdad));
+ </script>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+<script>
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    function calcularImc(peso,altura) {
+
+        imc = peso / (altura * altura);
+    
+
+        return (imc);
+        
+        }
+ 
+
+
+  var ImcAlvaro =   calcularImc(68,1.65);
+  var ImcRodrigo = calcularImc(71,1.60);
+
+        imprimir("El promedio del imc calculado de Christian y Felipe es " + Math.round(ImcAlvaro+ImcRodrigo)/2);
+
+ </script>
+
+</body>
+</html>
